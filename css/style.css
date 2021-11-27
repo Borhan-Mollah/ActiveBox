@@ -1,0 +1,697 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.m_30{
+    margin: 0 30px 0;
+}
+
+.m30{
+    margin-right: 30px;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.full_rapper{
+    width: 100%;
+}
+
+.conteinar{
+    width: 1170px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+} 
+/*================ Font CDN =======================================
+    font-family: 'Cardo', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+===================================================================*/
+
+/* ================================================================
+                        Common css End
+===================================================================*/
+
+/*=================================================================
+                        1. Meanu area start.
+==================================================== ==============*/
+.meanu_bg{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999;
+}
+.meanu_bg .meanu{
+    height: 100px;
+}
+.meanu_bg .meanu .logo{
+    height: 100px;
+    width: 200px;
+    float: left;
+}
+.meanu_bg .meanu .logo img{
+    margin-top: 38px;
+}
+.meanu_bg .meanu .meanu_list{
+    height: 100px;
+    width: 970px;
+    float: left;
+
+}
+
+.meanu_bg .meanu .meanu_list ul{
+    float: right;
+}
+.meanu_bg .meanu .meanu_list ul li{
+    float: left;
+}
+.meanu_bg .meanu .meanu_list ul li a{
+    margin-left: 60px;
+    line-height: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    transition: all linear .3s;
+}
+.meanu_bg .meanu .meanu_list ul li a:hover{
+    color: #e84545;
+}
+.meanu_bg .meanu .meanu_list ul li a:after{
+    content: '';
+    position: absolute;
+    background-color: #e84545;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom:-10px ;
+    transition:all linear 0.3s;
+}
+.meanu_bg .meanu .meanu_list ul li a:hover:after{
+    width:100% ;
+}
+/*=================================================================
+                        1. Meanu area End.
+==================================================== ==============*/
+
+/*=================================================================
+                        2. Bannar area start.
+==================================================== ==============*/
+.bannar_bg{
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/bannar_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.bannar_bg::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(43, 46, 74, 0.95);
+    z-index: -1;
+
+
+}
+
+.bannar_bg .bannar{
+    height: 600px;
+    text-align: center;
+}
+
+.bannar_bg .bannar h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 71px;
+    color: #fff;
+    padding: 250px 115px 20px;
+    text-transform: uppercase;
+}
+
+.bannar_bg .bannar p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #fff;
+    padding: 0 125px 75px;
+}
+.bannar_bg .bannar a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+    background-color: #e84545;
+    line-height: 45px;
+    display: inline-block;
+    padding: 0 50px 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+.bannar_bg .bannar a::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.bannar_bg .bannar a:hover::before{
+    animation: animate 2s linear forwards 1;
+}
+@keyframes animate{
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+        border-radius: 5px;
+    }
+
+    25% {
+        width: 0%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: transparent;
+    }
+
+    75% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #fff;
+        border-right-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: transparent;
+    }
+
+    99% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: #fff;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: #fff;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+    }
+}
+
+/*=================================================================
+                        2. Bannar area End.
+==================================================== ==============*/
+
+/*=================================================================
+                        3. Service area start.
+==================================================== ==============*/
+.service_bg{
+    height: 520px;
+    background-color: #fff;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.service_bg .service{
+    height: 520px;
+}
+.service_bg .service .service_item{
+    height: 185px;
+    width: 370px;
+    text-align: center;
+    float: left;
+    margin-bottom: 75px;
+}
+.service_bg .service .service_item h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: auto;
+    text-transform: uppercase;
+    padding: 30px 0 15px;
+}
+.service_bg .service .service_item p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c7279;
+    padding: 0 25px 0;
+}
+/*=================================================================
+                        3. Service area End.
+==================================================== ==============*/
+/*=================================================================
+                        4. Gallary area start.
+==================================================== ==============*/
+.Gallary_bg{
+    height: 700px;
+}
+.Gallary_bg .gallary_item{
+    height: 350px;
+    width: 25%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.Gallary_bg .gallary_item img{
+    height: 100%;
+    width: 100%;
+}
+
+.Gallary_bg .gallary_item .item_overlay{
+    background-color: rgba(232, 69, 69, 0.90);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    color: #fff;
+    transition: all linear .5s;
+    transition-delay: .2s;
+}
+.Gallary_bg .gallary_item:hover .item_overlay{
+    left: 0;
+}
+.Gallary_bg .gallary_item .item_overlay .overlay_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Gallary_bg .gallary_item .item_overlay .overlay_text h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.Gallary_bg .gallary_item .item_overlay .overlay_text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+/*=================================================================
+                        4. Gallary area End.
+==================================================== ==============*/
+/*=================================================================
+                        5. Team area start.
+==================================================== ==============*/
+.team_bg{
+    height: 580px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.team_bg .team{
+    height: 580px;
+}
+.team_bg .team .team_member{
+    height: 580px;
+    width: 270px;
+    float: left;
+}
+.team_bg .team .team_member img{
+    height: 270px;
+    width: 100%;
+}
+.team_bg .team .team_member h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #2d3033;
+    padding: 25px 0 10px;
+}
+.team_bg .team .team_member h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+}
+.team_bg .team .team_member p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6c7279;
+    text-transform: capitalize;
+    padding:10px 0 30px ;
+}
+.team_bg .team .team_member a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #c6cacc;
+    text-align: center;
+    color: #c6cacc;
+    transition: all linear .5s;
+}
+.team_bg .team .team_member a i:hover{
+    background-color: rgba(221, 221, 221, 0.25);
+    border: 1px solid rgba(232, 69, 69, 0.50);
+    color: #000;
+}
+/*=================================================================
+                        5. Team area End.
+==================================================== ==============*/
+/*=================================================================
+                        6. Feedback area start.
+==================================================== ==============*/
+.feedback_bg{
+    height: 500px;
+    background-color: #53354a;
+    position: relative;
+    z-index: 1;
+}
+.feedback_bg::after{
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: url(../images/Feedback.jpg);
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.feedback_bg .feedback_item{
+    height: 500px;
+    width: 1170px;
+}
+.feedback_bg .feedback_item .feedback_text{
+    width: 500px;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+.feedback_bg .feedback_item .feedback_text q{
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    margin-top: 110px;
+}
+.feedback_bg .feedback_item .feedback_text h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 30px 0 0 ;
+}
+
+.feedback_bg .feedback_item .feedback_text ul li{
+    height: 12px;
+    width: 12px;
+    background-color: rgba(255, 255, 255, 0.20);
+    float: left;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.feedback_bg .feedback_item .feedback_text ul li:last-child{
+    margin-right: 0mm;
+}
+.feedback_bg .feedback_item .feedback_text ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 105px;
+}
+
+.feedback_bg .feedback_item .feedback_text ul li.active{
+    background-color: #fff;
+}
+/*=================================================================
+                        6. Feedback area End.
+==================================================== ==============*/
+/*=================================================================
+                        7. Download area start.
+==================================================== ==============*/
+.Download_bg{
+    height: 140px;
+    margin: 100px 0;
+}
+.Download_bg .Download_item{
+    height: 140px;
+    text-align: center;
+}
+.Download_bg .Download_item h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #2d3033;
+    font-size: 28px;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+.Download_bg .Download_item h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    color: #2d3033;
+    padding: 10px 0 25px;
+    text-transform: uppercase;
+
+}
+.Download_bg .Download_item a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #e84545;
+    line-height: 40px;
+    padding: 0px 80px;
+    position: relative;
+}
+
+.Download_bg .Download_item a::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.Download_bg .Download_item a:hover::before{
+    animation: animate1 2s linear forwards 1;
+}
+@keyframes animate1{
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(13, 8, 29);
+        border-radius: 5px;
+    }
+
+    25% {
+        width: 0%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(13, 8, 29);
+        border-left-color: transparent;
+    }
+
+    75% {
+        width: 100%;
+        height: 100%;
+        border-top-color: rgb(13, 8, 29);
+        border-right-color: transparent;
+        border-bottom-color: rgb(13, 8, 29);
+        border-left-color: transparent;
+    }
+
+    99% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: rgb(13, 8, 29);;
+        border-bottom-color: transparent;
+        border-left-color: rgb(13, 8, 29);
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: rgb(13, 8, 29);
+        border-bottom-color: transparent;
+        border-left-color: rgb(13, 8, 29);
+    }
+}
+
+/*=================================================================
+                        7. Download area End.
+==================================================== ==============*/
+/* ==================================================================
+                        8. Footer Top CSS Start here.
+=================================================================== */
+.footer_top_bg{
+    height: 95px;
+    background-color: #3a3e64;
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+.footer_top_bg .footer_area_A{
+    height: 95px;
+    width: 770px;
+    float: left;
+}
+.footer_top_bg .footer_area_A .area_1{
+    width: 370px;
+    height: 95px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+.footer_top_bg .footer_area_A .area_1 h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: auto;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+.footer_top_bg .footer_area_A .area_1 address{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.5px;
+    color: rgba(255, 255, 255, 0.50);
+    padding: 10px 110px 0;
+}
+.footer_top_bg .footer_area_A .area_2{
+    width: 370px;
+    height: 95px;
+    float: left;
+    text-align: center;
+}
+.footer_top_bg .footer_area_A .area_2 h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: auto;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer_top_bg .footer_area_A .area_2 a i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border: 3px solid #fff;
+    color: #fff;
+    margin-top:15px ;
+    box-sizing: border-box;
+}
+.footer_top_bg .footer_area_A .area_2 a:hover i{
+    background-color: rgba(255, 255, 255, 0.671);
+    color: #000;
+}
+
+.footer_top_bg .footer_area_B{
+    height: 95px;
+    width: 400px;
+    float: left;
+    text-align: center;
+}
+
+.footer_top_bg .footer_area_B h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: auto;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer_top_bg .footer_area_B p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.5px;
+    color: rgba(255, 255, 255, 0.50);
+    padding: 10px 15px 0px;
+}
+/* ==================================================================
+                    8. Footer Top CSS End here.
+=================================================================== */
+
+/* ==================================================================
+                   9. Footer Bottom CSS sart here.
+=================================================================== */
+.footer_bottom_bg{
+    height: 95px;
+    background-color: #313454;
+}
+.footer_bottom_bg .footer_bottom{
+    height: 95px;
+    text-align: center;
+}
+.footer_bottom_bg .footer_bottom p{
+    color: rgba(255, 255, 255, 0.50);
+    padding: 30px 0 0;
+    text-transform: capitalize;
+}
+.footer_bottom_bg .footer_bottom p a{
+    display: inline-block;
+    color: #fff;
+}
+.footer_bottom_bg .footer_bottom p i{
+    color: red;
+}
+/* ==================================================================
+                        9. Footer bottom CSS End here.
+=================================================================== */
